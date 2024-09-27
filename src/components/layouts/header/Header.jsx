@@ -3,7 +3,10 @@ import './Header.css';
 
 const Header = () => {
   return (
-    <img className="header-banner" src="/images/banner_cut.jpg" alt="Banner" />
+    <picture>
+      <source media="(max-width: 600px)" srcSet="/images/banner_cut.jpg" />
+      <img className="header-banner" src="/images/banner_cut_web.jpg" alt="Banner" />
+    </picture>
   );
 }
 
