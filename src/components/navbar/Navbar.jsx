@@ -1,9 +1,8 @@
-// src/components/Navbar.jsx
 import React, { useState } from 'react';
-import { AppBar, Toolbar, IconButton, Typography, InputBase, Box, Button, Menu, MenuItem } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Typography, Button, Menu, MenuItem, Box } from '@mui/material';
+import { Menu as MenuIcon, Search as SearchIcon } from '@mui/icons-material';
 import { styled, alpha } from '@mui/material/styles';
-import SearchIcon from '@mui/icons-material/Search';
-import MenuIcon from '@mui/icons-material/Menu';
+import InputBase from '@mui/material/InputBase';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -48,12 +47,24 @@ const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 
+  // Estado para manejar el menú desplegable de "Productos"
+  const [productMenuAnchorEl, setProductMenuAnchorEl] = useState(null);
+  const productMenuOpen = Boolean(productMenuAnchorEl);
+
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
   const handleMenuClose = () => {
     setAnchorEl(null);
+  };
+
+  const handleProductMenuOpen = (event) => {
+    setProductMenuAnchorEl(event.currentTarget);
+  };
+
+  const handleProductMenuClose = () => {
+    setProductMenuAnchorEl(null);
   };
 
   return (
@@ -91,15 +102,27 @@ const Navbar = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            
           </Typography>
 
           {/* Secciones (Links) - solo en resoluciones mayores a 600px */}
           <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: 2 }}>
             <Button color="inherit">Inicio</Button>
-            <Button color="inherit">Productos</Button>
+            <Button color="inherit" onClick={handleProductMenuOpen}>
+              Productos
+            </Button>
             <Button color="inherit">Contacto</Button>
           </Box>
+
+          {/* Menú desplegable de "Productos" */}
+          <Menu
+            anchorEl={productMenuAnchorEl}
+            open={productMenuOpen}
+            onClose={handleProductMenuClose}
+          >
+            <MenuItem onClick={handleProductMenuClose}>Fiat</MenuItem>
+            <MenuItem onClick={handleProductMenuClose}>Volkswagen</MenuItem>
+            <MenuItem onClick={handleProductMenuClose}>Ver todos</MenuItem>
+          </Menu>
 
           {/* Buscador */}
           <Search>
