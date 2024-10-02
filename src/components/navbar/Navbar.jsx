@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, IconButton, Typography, Button, Menu, MenuItem, Box } from '@mui/material';
 import { Menu as MenuIcon, Search as SearchIcon } from '@mui/icons-material';
+import HomeIcon from '@mui/icons-material/Home';
+import InventoryIcon from '@mui/icons-material/Inventory';
+import ContactMailIcon from '@mui/icons-material/ContactMail';
+import LoginIcon from '@mui/icons-material/Login';
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
+import { Link } from 'react-router-dom';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -85,15 +90,29 @@ const Navbar = () => {
 
           {/* Menú desplegable del botón hamburguesa */}
           <Menu
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleMenuClose}
-            sx={{ display: { xs: 'block', sm: 'none' } }}
-          >
-            <MenuItem onClick={handleMenuClose}>Inicio</MenuItem>
-            <MenuItem onClick={handleMenuClose}>Productos</MenuItem>
-            <MenuItem onClick={handleMenuClose}>Contacto</MenuItem>
+  anchorEl={anchorEl}
+  open={open}
+  onClose={handleMenuClose}
+  sx={{ display: { xs: 'block', sm: 'none' } }}
+>
+            <MenuItem component={Link} to="/home" onClick={handleMenuClose}>
+              <HomeIcon sx={{ marginRight: 1 }} />
+              Inicio
+            </MenuItem>
+            <MenuItem component={Link} to="/products" onClick={handleMenuClose}>
+              <InventoryIcon sx={{ marginRight: 1 }} />
+              Productos
+            </MenuItem>
+            <MenuItem component={Link} to="/contact" onClick={handleMenuClose}>
+              <ContactMailIcon sx={{ marginRight: 1 }} />
+              Contacto
+            </MenuItem>
+            <MenuItem component={Link} to="/login" onClick={handleMenuClose}>
+              <LoginIcon sx={{ marginRight: 1 }} />
+              Iniciar Sesión
+            </MenuItem>
           </Menu>
+
 
           {/* Título o logo */}
           <Typography
@@ -106,11 +125,18 @@ const Navbar = () => {
 
           {/* Secciones (Links) - solo en resoluciones mayores a 600px */}
           <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: 2 }}>
-            <Button color="inherit">Inicio</Button>
-            <Button color="inherit" onClick={handleProductMenuOpen}>
+            <Button component={Link} to="/home" color="inherit" startIcon={<HomeIcon />}>
+              Inicio
+            </Button>
+            <Button color="inherit" onClick={handleProductMenuOpen} startIcon={<InventoryIcon />}>
               Productos
             </Button>
-            <Button color="inherit">Contacto</Button>
+            <Button component={Link} to="/contact" color="inherit" startIcon={<ContactMailIcon />}>
+              Contacto
+            </Button>
+            <Button component={Link} to="/login" color="inherit" startIcon={<LoginIcon />}>
+              Iniciar Sesión
+            </Button>
           </Box>
 
           {/* Menú desplegable de "Productos" */}
@@ -119,9 +145,15 @@ const Navbar = () => {
             open={productMenuOpen}
             onClose={handleProductMenuClose}
           >
-            <MenuItem onClick={handleProductMenuClose}>Fiat</MenuItem>
-            <MenuItem onClick={handleProductMenuClose}>Volkswagen</MenuItem>
-            <MenuItem onClick={handleProductMenuClose}>Ver todos</MenuItem>
+            <MenuItem component={Link} to="/fiat" onClick={handleProductMenuClose}>
+              Fiat
+            </MenuItem>
+            <MenuItem component={Link} to="/volkswagen" onClick={handleProductMenuClose}>
+              Volkswagen
+            </MenuItem>
+            <MenuItem component={Link} to="/products" onClick={handleProductMenuClose}>
+              Ver todos
+            </MenuItem>
           </Menu>
 
           {/* Buscador */}

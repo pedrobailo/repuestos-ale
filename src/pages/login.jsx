@@ -3,15 +3,15 @@ import Header from '../components/layouts/header/header';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/layouts/footer/Footer';
 
-const Contact = () => {
+const Login = () => {
   return (
     <> 
     <Header />
     <Navbar />
-    <h2 className='h1-title'>Contacto</h2>
+    <h2 className='h1-title'>Iniciar Sesion</h2>
     <Footer />
     </>
   )
 }
 
-export default Contact;
+export default Login;

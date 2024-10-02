@@ -1,8 +1,17 @@
 import React from 'react'
+import Header from '../components/layouts/header/header';
+import Navbar from '../components/navbar/Navbar';
+import Footer from '../components/layouts/footer/Footer';
 
 const Fiat = () => {
   return (
-    <div>Fiat</div>
+    <> 
+    <Header />
+    <Navbar />
+    <h2 className='h1-title'>Fiat</h2>
+    <Footer />
+    </>
+    
   )
 }
 
