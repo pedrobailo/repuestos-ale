@@ -6,6 +6,8 @@ import Fiat from './pages/Fiat.jsx';
 import Volkswagen from './pages/Volkswagen.jsx'; 
 import Contact from './pages/Contact';
 import Login from './pages/login.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 const App = () => {
