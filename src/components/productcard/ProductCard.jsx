@@ -9,8 +9,8 @@ const ProductCard = ({ image, price, description }) => {
         <h5 className="product-price">${price}</h5>
         <p className="product-description">{description}</p>
       </div>
-      <button className="add-to-cart-button">Agregar al carrito</button>
-      <button className="add-to-cart-button">Comprar</button>
+      <button className="add-to-cart-button">Ver categoria</button>
+      
     </div>
   );
 };

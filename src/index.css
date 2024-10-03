@@ -38,3 +38,11 @@ body {
     height: 400px; /* o cualquier altura que prefieras */
     object-fit: cover; /* 'cover' mantiene la proporción de aspecto, recortando si es necesario */
   }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
