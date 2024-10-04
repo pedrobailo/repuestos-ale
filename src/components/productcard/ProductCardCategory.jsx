@@ -1,12 +1,12 @@
 import React from "react";
 import './ProductCard.css';
 
-const ProductCard = ({ image, price, description }) => {
+const ProductCardCategory = ({ image, nombre, description }) => {
   return (
     <div className="product-card">
       <img className="product-image" src={image} alt="product" />
       <div className="product-info">
-        <h5 className="product-price">${price}</h5>
+        <h3 className="product-name">{nombre}</h3>
         <p className="product-description">{description}</p>
       </div>
       <button className="add-to-cart-button">Ver categoria</button>
@@ -15,5 +15,5 @@ const ProductCard = ({ image, price, description }) => {
   );
 };
 
-export default ProductCard;
+export default ProductCardCategory;
 
