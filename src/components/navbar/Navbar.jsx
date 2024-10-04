@@ -146,9 +146,12 @@ const Navbar = () => {
             onClose={handleProductMenuClose}
           >
             <MenuItem component={Link} to="/fiat" onClick={handleProductMenuClose}>
+              <img src="/fiat.png" alt="Fiat Logo" style={{ width: '20px', marginRight: '8px' }} />
               Fiat
             </MenuItem>
+
             <MenuItem component={Link} to="/volkswagen" onClick={handleProductMenuClose}>
+            <img src="/volkswagen.png" alt="volkswagen Logo" style={{ width: '20px', marginRight: '8px' }} />
               Volkswagen
             </MenuItem>
             <MenuItem component={Link} to="/products" onClick={handleProductMenuClose}>
