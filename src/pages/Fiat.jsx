@@ -18,7 +18,7 @@ const Fiat = () => {
     FIAT
 </h2>
 
-    <section>
+  <section className='SectionCategoriasProductos'>
     <div className="product-grid">
           <ProductCardCategory
             image="https://autodo.vtexassets.com/arquivos/motor.png"
