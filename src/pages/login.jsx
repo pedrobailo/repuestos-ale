@@ -2,16 +2,17 @@ import React from 'react'
 import Header from '../components/layouts/header/Header';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/layouts/footer/Footer';
+import LoginForm from '../components/loginform/LoginForm';
 
-const Login = () => {
+const LoginPage = () => {
   return (
     <> 
     <Header />
     <Navbar />
-    <h2 className='h1-title'>Iniciar Sesion</h2>
+    <LoginForm />
     <Footer />
     </>
   )
 }
 
-export default Login;
+export default LoginPage;
