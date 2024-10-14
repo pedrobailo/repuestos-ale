@@ -4,7 +4,6 @@ import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/layouts/footer/Footer'
 import CarouselHome from '../components/layouts/Bootstrap/CarouselHome'
 import SearchBar from '../components/searchbar/SearchBar'
-import MyNavbar from '../components/mynavbar/mynavbar'
 import ProductSearch from '../components/productsearch/ProductSearch'
 
 
