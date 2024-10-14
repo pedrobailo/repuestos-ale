@@ -1,25 +1,18 @@
-const products = [
-    {
-      id: 1,
-      name: "Filtro de aceite",
-      category: "Repuestos de motor",
-      brand: "Marca A",
-      price: 100,
-      image: "/images/filtro.jpg",
-      description: "Filtro de aceite para motor",
-      stock: 20,
-    },
-    {
-      id: 2,
-      name: "Tapizado de asiento",
-      category: "Accesorios",
-      brand: "Marca B",
-      price: 150,
-      image: "/images/tapizado.jpg",
-      description: "Tapizado de asiento en cuero",
-      stock: 10,
-    },
-  ];
-  
-  export default products;
+const products = {
+  Fiat: {
+    Motor: ['Producto 1', 'Producto 2'],
+    Encendido: ['Producto 3'],
+    Iluminacion: ['Producto 4', 'Producto 5'],
+    // ... otras categorías
+  },
+  Volkswagen: {
+    Motor: ['Producto 6', 'Producto 7'],
+    Encendido: ['Producto 8'],
+    Iluminacion: ['Producto 9', 'Producto 10'],
+    // ... otras categorías
+  },
+};
+
+export default products;
+
   
