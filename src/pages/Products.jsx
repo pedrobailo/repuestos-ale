@@ -2,8 +2,8 @@ import React from 'react'
 import Header from '../components/layouts/header/Header';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/layouts/footer/Footer';
-import ProductCardCategory from '../components/productcard/ProductCardCategory';
 import { Link } from 'react-router-dom';
+import ProductBrand from '../components/productbrand/productbrand';
 
 
 const Products = () => {
@@ -15,12 +15,12 @@ const Products = () => {
     <h3 className='h1-title'>Seleccione una marca</h3>
     <section className='SectionCategorias'>
       <Link to="/fiat">
-        <ProductCardCategory 
+        <ProductBrand 
           image="/fiat.png"
         />
       </Link>
       <Link to="/volkswagen">
-        <ProductCardCategory 
+        <ProductBrand 
           image="/volkswagen.png"
         />
       </Link>
