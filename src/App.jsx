@@ -7,6 +7,9 @@ import Volkswagen from './pages/Volkswagen.jsx';
 import Contact from './pages/Contact';
 import Login from './pages/login.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CartPage from './pages/CartPage.jsx';
+
+
 
 
 
@@ -22,6 +25,7 @@ const App = () => {
           <Route path='/contact' element={<Contact />} />
           <Route path='/products' element={<Products />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/carrito' element={<CartPage />} />
         </Routes>
       </BrowserRouter>
 
