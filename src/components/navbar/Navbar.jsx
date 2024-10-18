@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, IconButton, Typography, Button, Menu, MenuItem, Box } from '@mui/material';
-import { Menu as MenuIcon, Search as SearchIcon } from '@mui/icons-material';
+import { Menu as MenuIcon, Search as SearchIcon, ShoppingCart } from '@mui/icons-material';
 import HomeIcon from '@mui/icons-material/Home';
 import InventoryIcon from '@mui/icons-material/Inventory';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
@@ -111,6 +111,10 @@ const Navbar = () => {
               <LoginIcon sx={{ marginRight: 1 }} />
               Iniciar Sesión
             </MenuItem>
+            <MenuItem component={Link} to="/carrito" onClick={handleMenuClose}>
+              <ShoppingCart sx={{ marginRight: 1 }} />
+              Carrito
+            </MenuItem>
           </Menu>
 
 
@@ -136,6 +140,9 @@ const Navbar = () => {
             </Button>
             <Button component={Link} to="/login" color="inherit" startIcon={<LoginIcon />}>
               Iniciar Sesión
+            </Button>
+            <Button component={Link} to="/carrito" color="inherit" startIcon={<ShoppingCart />}>
+              Carrito
             </Button>
           </Box>
 
