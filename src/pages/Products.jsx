@@ -3,7 +3,7 @@ import Header from '../components/layouts/header/Header';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/layouts/footer/Footer';
 import { Link } from 'react-router-dom';
-import ProductBrand from '../components/productbrand/productbrand';
+import ProductBrand from '../components/productbrand/ProductBrand';
 
 
 const Products = () => {
@@ -24,7 +24,7 @@ const Products = () => {
           image="/volkswagen.png"
         />
       </Link>
-    </section> 
+    </section>   
     <Footer />
     </>
   )
