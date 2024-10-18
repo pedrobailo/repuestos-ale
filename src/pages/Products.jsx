@@ -24,11 +24,9 @@ const Products = () => {
           image="/volkswagen.png"
         />
       </Link>
-    </section>
-  
+    </section> 
     <Footer />
     </>
   )
 }
-
 export default Products;
