@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Login from './pages/login.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartPage from './pages/CartPage.jsx';
+import CategoriaVacia from './pages/CategoriaVacia.jsx';
 
 
 
@@ -26,6 +27,7 @@ const App = () => {
           <Route path='/products' element={<Products />} />
           <Route path='/login' element={<Login />} />
           <Route path='/carrito' element={<CartPage />} />
+          <Route path='/vacio' element={<CategoriaVacia />} />
         </Routes>
       </BrowserRouter>
 

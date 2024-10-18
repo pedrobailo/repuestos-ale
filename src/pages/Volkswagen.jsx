@@ -25,11 +25,11 @@ const Volkswagen = () => {
             nombre="Motor"
             description=""
             categories={[
-              { name: 'Distribución', link: '' },
-              { name: 'Embrague', link: '' },
-              { name: 'Turbo', link: '' },
-              { name: 'Correa', link: '' },
-              { name: 'Soportes', link: '/fiat/motor/soportes' },
+              { name: 'Distribución', link: '/vacio' },
+              { name: 'Embrague', link: '/vacio' },
+              { name: 'Turbo', link: '/vacio' },
+              { name: 'Correa', link: '/vacio' },
+              { name: 'Soportes', link: '/vacio' },
             ]}
           />
           <ProductCardCategory
@@ -37,9 +37,9 @@ const Volkswagen = () => {
             nombre="Iluminación"
             description=""
             categories={[
-              { name: 'Accesorios', link: '' },
-              { name: 'Lámpara', link: '' },
-              { name: 'Faros', link: '' },
+              { name: 'Accesorios', link: '/vacio' },
+              { name: 'Lámpara', link: '/vacio' },
+              { name: 'Faros', link: '/vacio' },
             ]}
           />
           <ProductCardCategory
@@ -47,12 +47,12 @@ const Volkswagen = () => {
             nombre="Encendido"
             description=""
             categories={[
-              { name: 'Alternador', link: '' },
-              { name: 'Arranque', link: '' },
-              { name: 'Bobina de Encendido', link: '' },
-              { name: 'Bujía', link: '' },
-              { name: 'Fusibles', link: '' },
-              { name: 'Baterías', link: '' },
+              { name: 'Alternador', link: '/vacio' },
+              { name: 'Arranque', link: '/vacio' },
+              { name: 'Bobina de Encendido', link: '/vacio' },
+              { name: 'Bujía', link: '/vacio' },
+              { name: 'Fusibles', link: '/vacio' },
+              { name: 'Baterías', link: '/vacio' },
             ]}
           />
           <ProductCardCategory
@@ -60,8 +60,8 @@ const Volkswagen = () => {
             nombre="Suspensión"
             description=""
             categories={[
-              { name: 'Suspension', link: '' },
-              { name: 'Freno', link: '' },
+              { name: 'Suspension', link: '/vacio' },
+              { name: 'Freno', link: '/vacio' },
             ]}
           /> 
           <ProductCardCategory
@@ -69,8 +69,8 @@ const Volkswagen = () => {
             nombre="Filtros y Aceites"
             description=""
             categories={[
-              { name: 'Aceite', link: '' },
-              { name: 'Filtro', link: '' },
+              { name: 'Aceite', link: '/vacio' },
+              { name: 'Filtro', link: '/vacio' },
             ]}
           />
           <ProductCardCategory
@@ -78,10 +78,10 @@ const Volkswagen = () => {
             nombre="Inyección"
             description=""
             categories={[
-              { name: 'Inyectores', link: '' },
-              { name: 'Sensor', link: '' },
-              { name: 'Bomba de Inyeccion', link: '' },
-              { name: 'Modulo', link: '' },
+              { name: 'Inyectores', link: '/vacio' },
+              { name: 'Sensor', link: '/vacio' },
+              { name: 'Bomba de Inyeccion', link: '/vacio' },
+              { name: 'Modulo', link: '/vacio' },
             ]}
           />
           <ProductCardCategory
@@ -89,15 +89,14 @@ const Volkswagen = () => {
             nombre="Refrigeración"
             description=""
             categories={[
-              { name: 'Electroventilador', link: '' },
-              { name: 'Termostatos', link: '' },
-              { name: 'Liquido Refrigerante', link: '' },
-              { name: 'Compresor', link: '' },
+              { name: 'Electroventilador', link: '/vacio' },
+              { name: 'Termostatos', link: '/vacio' },
+              { name: 'Liquido Refrigerante', link: '/vacio' },
+              { name: 'Compresor', link: '/vacio' },
             ]}
           />                                                       
         </div>
       </section>
-
     <Footer />
     </>
   )
