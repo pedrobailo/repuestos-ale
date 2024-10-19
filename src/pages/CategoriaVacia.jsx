@@ -10,4 +10,7 @@ const CategoriaVacia = () => {
   )
 }
 
+
 export default CategoriaVacia;
+
+
