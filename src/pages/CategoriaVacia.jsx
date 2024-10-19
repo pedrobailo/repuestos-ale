@@ -10,4 +10,4 @@ const CategoriaVacia = () => {
   )
 }
 
-export default CategoriaVacia
+export default CategoriaVacia;
