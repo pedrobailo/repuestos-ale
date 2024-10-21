@@ -9,6 +9,7 @@ import Login from './pages/login.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartPage from './pages/CartPage.jsx';
 import CategoriaVacia from './pages/CategoriaVacia.jsx';
+import Products2 from './pages/Products2.jsx';
 
 
 
@@ -28,6 +29,7 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/carrito' element={<CartPage />} />
           <Route path='/vacio' element={<CategoriaVacia />} />
+          <Route path='/sidebar' element={<Products2/>} />
         </Routes>
       </BrowserRouter>
 

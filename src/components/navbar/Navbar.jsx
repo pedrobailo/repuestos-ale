@@ -144,6 +144,9 @@ const Navbar = () => {
             <Button component={Link} to="/carrito" color="inherit" startIcon={<ShoppingCart />}>
               Carrito
             </Button>
+            <Button component={Link} to="/sidebar" color="inherit" >
+              Sidebar
+            </Button>
           </Box>
 
           {/* Menú desplegable de "Productos" */}
