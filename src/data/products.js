@@ -1,18 +1,159 @@
-const products = {
-  Fiat: {
-    Motor: ['Producto 1', 'Producto 2'],
-    Encendido: ['Producto 3'],
-    Iluminacion: ['Producto 4', 'Producto 5'],
-    // ... otras categorías
+// data/products.js
+const products = [
+  {
+    id: 1,
+    name: 'Culata de motor FIAT',
+    category: 'Fiat',
+    subcategory: 'Motor',
+    subSubcategory: 'Culata',
   },
-  Volkswagen: {
-    Motor: ['Producto 6', 'Producto 7'],
-    Encendido: ['Producto 8'],
-    Iluminacion: ['Producto 9', 'Producto 10'],
-    // ... otras categorías
+  {
+    id: 2,
+    name: 'Pistón FIAT 1.4L',
+    category: 'Fiat',
+    subcategory: 'Motor',
+    subSubcategory: 'Pistones',
   },
-};
+  {
+    id: 3,
+    name: 'Bujía FIAT NGK',
+    category: 'Fiat',
+    subcategory: 'Encendido',
+    subSubcategory: 'Bujías',
+  },
+  {
+    id: 4,
+    name: 'Faros delanteros FIAT',
+    category: 'Fiat',
+    subcategory: 'Iluminacion',
+    subSubcategory: 'Faros delanteros',
+  },
+  {
+    id: 5,
+    name: 'Radiador FIAT',
+    category: 'Fiat',
+    subcategory: 'Refrigeracion',
+    subSubcategory: 'Radiadores',
+  },
+  {
+    id: 6,
+    name: 'Culata de motor VW',
+    category: 'Volkswagen',
+    subcategory: 'Motor',
+    subSubcategory: 'Componentes del motor',
+  },
+  {
+    id: 7,
+    name: 'Bujía VW Bosch',
+    category: 'Volkswagen',
+    subcategory: 'Encendido',
+    subSubcategory: 'Bujías',
+  },
+  {
+    id: 8,
+    name: 'Faros delanteros VW',
+    category: 'Volkswagen',
+    subcategory: 'Iluminacion',
+    subSubcategory: 'Faros delanteros',
+  },
+  {
+    id: 9,
+    name: 'Amortiguador delantero VW',
+    category: 'Volkswagen',
+    subcategory: 'Suspension',
+    subSubcategory: 'Amortiguadores',
+  },
+  {
+    id: 10,
+    name: 'Radiador VW',
+    category: 'Volkswagen',
+    subcategory: 'Refrigeracion',
+    subSubcategory: 'Radiadores',
+  },
+  {
+    id: 11,
+    name: 'Bujía Fiat Punto',
+    category: 'Fiat',
+    subcategory: 'Motor',
+    subSubcategory: 'Bujías',
+  },
+  {
+    id: 12,
+    name: 'Alternador Fiat',
+    category: 'Fiat',
+    subcategory: 'Encendido',
+    subSubcategory: 'Alternador',
+  },  
+  {
+    id: 13,
+    name: 'Ventilador Fiat Palio Weekend',
+    category: 'Fiat',
+    subcategory: 'Refrigeración',
+    subSubcategory: 'Electroventilador',
+  },  
+  {
+    id: 14,
+    name: 'Piston VW Gol 2008-2012',
+    category: 'Volkswagen',
+    subcategory: 'Motor',
+    subSubcategory: 'Pistones',
+  },
+  {
+    id: 15,
+    name: 'Optica VW Suran 2017',
+    category: 'Volkswagen',
+    subcategory: 'Encendido',
+    subSubcategory: 'Faros Delanteros',
+  },
+  {
+    id: 16,
+    name: 'Radiador VW',
+    category: 'Volkswagen',
+    subcategory: 'Refrigeracion',
+    subSubcategory: 'Radiadores',
+  },
+  {
+    id: 17,
+    name: 'Radiador VW',
+    category: 'Volkswagen',
+    subcategory: 'Refrigeracion',
+    subSubcategory: 'Radiadores',
+  },
+  {
+    id: 18,
+    name: 'Radiador VW',
+    category: 'Volkswagen',
+    subcategory: 'Refrigeracion',
+    subSubcategory: 'Radiadores',
+  },
+  {
+    id: 19,
+    name: 'Optica VW Suran 2020',
+    category: 'Volkswagen',
+    subcategory: 'Encendido',
+    subSubcategory: 'Faros Delanteros',
+  },
+  {
+    id: 20,
+    name: 'Optica VW GOL 2017',
+    category: 'Volkswagen',
+    subcategory: 'Encendido',
+    subSubcategory: 'Faros Delanteros',
+  },
+  {
+    id: 21,
+    name: 'Optica VW GOLF 2017-2019',
+    category: 'Volkswagen',
+    subcategory: 'Encendido',
+    subSubcategory: 'Faros Delanteros',
+  },
+  {
+    id: 22,
+    name: 'Optica VW TAOS 2023',
+    category: 'Volkswagen',
+    subcategory: 'Encendido',
+    subSubcategory: 'Faros Delanteros',
+  },
+];
 
 export default products;
-
-  

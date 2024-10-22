@@ -1,0 +1,40 @@
+/* Products2.css */
+.container {
+    display: flex;
+    padding: 2px;
+  }
+  
+  .sidebar {
+    width: 25px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .product-list {
+    margin-left: 20px;
+    flex-grow: 1;
+    background-color: rgb(90, 89, 87);
+  }
+  
+  .product-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+    color: aliceblue;
+  }
+  
+  .product-item:hover {
+    background-color: #f0f0f0;
+  }
+
+  h2, h6{
+    color: aliceblue;
+  }
+
+  li, ul{
+    text-decoration: none;
+    list-style-type: none
+
+  }
+  
