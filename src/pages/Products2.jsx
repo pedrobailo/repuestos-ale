@@ -1,4 +1,3 @@
-// Products2.jsx
 import React, { useState, useEffect } from 'react';
 import './Products2.css'; // Importa el CSS
 import Sidebar from '../components/layouts/sidebar/Sidebar';
@@ -6,6 +5,7 @@ import Header from '../components/layouts/header/Header';
 import Footer from '../components/layouts/footer/Footer';
 import Navbar from '../components/navbar/Navbar';
 import productsData from '../data/products';
+import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
 
 const Products2 = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);
@@ -31,6 +31,16 @@ const Products2 = () => {
     setFilters((prevFilters) => ({ ...prevFilters, ...newFilters }));
   };
 
+  const handleAddToCart = (product) => {
+    // Lógica para agregar al carrito
+    console.log(`Producto añadido al carrito: ${product.name}`);
+  };
+
+  const handleViewProduct = (product) => {
+    // Lógica para ver el producto
+    console.log(`Ver detalles del producto: ${product.name}`);
+  };
+
   return (
     <>
       <Header />
@@ -38,15 +48,45 @@ const Products2 = () => {
       <div className="container">
         <Sidebar onFilterChange={handleFilterChange} />
         <div className="product-list">
-          <h2>Productos</h2>
+          <h2 className="product-title">Productos</h2>
           {filteredProducts.length > 0 ? (
-            <ul>
+            <div className="product-grid2">
               {filteredProducts.map((product) => (
-                <li key={product.id} className="product-item">{product.name}</li>
+                <Card key={product.id} className="product-card">
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image={product.image || 'ruta/a/imagen_por_defecto.jpg'}
+                    alt={product.name}
+                  />
+                  <CardContent>
+                    <Typography variant="h6">{product.name}</Typography>
+                    <Typography variant="body2" color="textSecondary">
+                      {product.description}
+                    </Typography>
+                    <Typography variant="body1">{`$${product.price}`}</Typography>
+                    <div className="card-buttons">
+                      <Button 
+                        variant="contained" 
+                        color="primary" 
+                        onClick={() => handleAddToCart(product)}
+                      >
+                        Agregar al carrito
+                      </Button>
+                      <Button 
+                        variant="outlined" 
+                        color="primary" 
+                        onClick={() => handleViewProduct(product)}
+                      >
+                        Ver producto
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
               ))}
-            </ul>
+            </div>
           ) : (
-            <p>No se encontraron productos.</p>
+            <p className="product-title">No se encontraron productos.</p>
           )}
         </div>
       </div>
