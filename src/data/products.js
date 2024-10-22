@@ -6,6 +6,8 @@ const products = [
     category: 'Fiat',
     subcategory: 'Motor',
     subSubcategory: 'Culata',
+    price: "235.000",
+    image: "https://img.freepik.com/foto-gratis/disposicion-diferentes-accesorios-coche_23-2149030412.jpg?t=st=1729605404~exp=1729609004~hmac=2284f9b271eaaba71f1de84f71c9e85b264820d4c8f9fb2e2b1eae4acacee521&w=360",
   },
   {
     id: 2,
@@ -13,6 +15,8 @@ const products = [
     category: 'Fiat',
     subcategory: 'Motor',
     subSubcategory: 'Pistones',
+    price: "145.000",
+    image: "https://img.freepik.com/foto-gratis/diversas-herramientas-trabajo-sobre-encimera_1170-1505.jpg?t=st=1729605481~exp=1729609081~hmac=ea4f5d5f8ef914aab951aa7f2afcd32f3b78d42d48b31e66e43468391767d293&w=900",
   },
   {
     id: 3,
@@ -20,6 +24,8 @@ const products = [
     category: 'Fiat',
     subcategory: 'Encendido',
     subSubcategory: 'Bujías',
+    price: "45.000",
+    image: "https://img.freepik.com/foto-gratis/disposicion-diferentes-accesorios-coche_23-2149030412.jpg?t=st=1729605404~exp=1729609004~hmac=2284f9b271eaaba71f1de84f71c9e85b264820d4c8f9fb2e2b1eae4acacee521&w=360",
   },
   {
     id: 4,
@@ -27,6 +33,8 @@ const products = [
     category: 'Fiat',
     subcategory: 'Iluminacion',
     subSubcategory: 'Faros delanteros',
+    price: "75.000",
+    image: "https://img.freepik.com/foto-gratis/disposicion-diferentes-accesorios-coche_23-2149030412.jpg?t=st=1729605404~exp=1729609004~hmac=2284f9b271eaaba71f1de84f71c9e85b264820d4c8f9fb2e2b1eae4acacee521&w=360",
   },
   {
     id: 5,
@@ -34,6 +42,8 @@ const products = [
     category: 'Fiat',
     subcategory: 'Refrigeracion',
     subSubcategory: 'Radiadores',
+    price: "240.000",
+    image: "https://img.freepik.com/foto-gratis/disposicion-diferentes-accesorios-coche_23-2149030412.jpg?t=st=1729605404~exp=1729609004~hmac=2284f9b271eaaba71f1de84f71c9e85b264820d4c8f9fb2e2b1eae4acacee521&w=360",
   },
   {
     id: 6,
@@ -41,6 +51,8 @@ const products = [
     category: 'Volkswagen',
     subcategory: 'Motor',
     subSubcategory: 'Componentes del motor',
+    price: "125.000",
+    image: "https://img.freepik.com/foto-gratis/diversas-herramientas-trabajo-sobre-encimera_1170-1505.jpg?t=st=1729605481~exp=1729609081~hmac=ea4f5d5f8ef914aab951aa7f2afcd32f3b78d42d48b31e66e43468391767d293&w=900",
   },
   {
     id: 7,
@@ -48,6 +60,8 @@ const products = [
     category: 'Volkswagen',
     subcategory: 'Encendido',
     subSubcategory: 'Bujías',
+    price: "35.000",
+    image: "https://img.freepik.com/foto-gratis/diversas-herramientas-trabajo-sobre-encimera_1170-1505.jpg?t=st=1729605481~exp=1729609081~hmac=ea4f5d5f8ef914aab951aa7f2afcd32f3b78d42d48b31e66e43468391767d293&w=900",
   },
   {
     id: 8,
@@ -55,6 +69,8 @@ const products = [
     category: 'Volkswagen',
     subcategory: 'Iluminacion',
     subSubcategory: 'Faros delanteros',
+    price: "235.000",
+    image: "https://img.freepik.com/foto-gratis/disposicion-diferentes-accesorios-coche_23-2149030412.jpg?t=st=1729605404~exp=1729609004~hmac=2284f9b271eaaba71f1de84f71c9e85b264820d4c8f9fb2e2b1eae4acacee521&w=360",
   },
   {
     id: 9,
@@ -62,6 +78,8 @@ const products = [
     category: 'Volkswagen',
     subcategory: 'Suspension',
     subSubcategory: 'Amortiguadores',
+    price: "145.000",
+    image: "https://img.freepik.com/foto-gratis/diversas-herramientas-trabajo-sobre-encimera_1170-1505.jpg?t=st=1729605481~exp=1729609081~hmac=ea4f5d5f8ef914aab951aa7f2afcd32f3b78d42d48b31e66e43468391767d293&w=900",
   },
   {
     id: 10,
@@ -69,6 +87,7 @@ const products = [
     category: 'Volkswagen',
     subcategory: 'Refrigeracion',
     subSubcategory: 'Radiadores',
+    price: "235.000",
   },
   {
     id: 11,
@@ -76,6 +95,8 @@ const products = [
     category: 'Fiat',
     subcategory: 'Motor',
     subSubcategory: 'Bujías',
+    price: "35.000",
+    image: "https://img.freepik.com/foto-gratis/diversas-herramientas-trabajo-sobre-encimera_1170-1505.jpg?t=st=1729605481~exp=1729609081~hmac=ea4f5d5f8ef914aab951aa7f2afcd32f3b78d42d48b31e66e43468391767d293&w=900",
   },
   {
     id: 12,
@@ -83,6 +104,8 @@ const products = [
     category: 'Fiat',
     subcategory: 'Encendido',
     subSubcategory: 'Alternador',
+    price: "20.000",
+    image: "https://img.freepik.com/foto-gratis/disposicion-diferentes-accesorios-coche_23-2149030412.jpg?t=st=1729605404~exp=1729609004~hmac=2284f9b271eaaba71f1de84f71c9e85b264820d4c8f9fb2e2b1eae4acacee521&w=360",
   },  
   {
     id: 13,
@@ -90,6 +113,8 @@ const products = [
     category: 'Fiat',
     subcategory: 'Refrigeración',
     subSubcategory: 'Electroventilador',
+    price: "52.000",
+    image: "https://img.freepik.com/foto-gratis/diversas-herramientas-trabajo-sobre-encimera_1170-1505.jpg?t=st=1729605481~exp=1729609081~hmac=ea4f5d5f8ef914aab951aa7f2afcd32f3b78d42d48b31e66e43468391767d293&w=900",
   },  
   {
     id: 14,
@@ -97,6 +122,8 @@ const products = [
     category: 'Volkswagen',
     subcategory: 'Motor',
     subSubcategory: 'Pistones',
+    price: "5.000",
+    image: "https://img.freepik.com/foto-gratis/diversas-herramientas-trabajo-sobre-encimera_1170-1505.jpg?t=st=1729605481~exp=1729609081~hmac=ea4f5d5f8ef914aab951aa7f2afcd32f3b78d42d48b31e66e43468391767d293&w=900",
   },
   {
     id: 15,
@@ -104,6 +131,8 @@ const products = [
     category: 'Volkswagen',
     subcategory: 'Encendido',
     subSubcategory: 'Faros Delanteros',
+    price: "224.000",
+    image: "https://img.freepik.com/foto-gratis/disposicion-diferentes-accesorios-coche_23-2149030412.jpg?t=st=1729605404~exp=1729609004~hmac=2284f9b271eaaba71f1de84f71c9e85b264820d4c8f9fb2e2b1eae4acacee521&w=360",
   },
   {
     id: 16,
@@ -111,6 +140,7 @@ const products = [
     category: 'Volkswagen',
     subcategory: 'Refrigeracion',
     subSubcategory: 'Radiadores',
+    price: "235.000",
   },
   {
     id: 17,
@@ -118,6 +148,8 @@ const products = [
     category: 'Volkswagen',
     subcategory: 'Refrigeracion',
     subSubcategory: 'Radiadores',
+    price: "235.000",
+    image: "https://img.freepik.com/foto-gratis/diversas-herramientas-trabajo-sobre-encimera_1170-1505.jpg?t=st=1729605481~exp=1729609081~hmac=ea4f5d5f8ef914aab951aa7f2afcd32f3b78d42d48b31e66e43468391767d293&w=900",
   },
   {
     id: 18,
@@ -132,6 +164,7 @@ const products = [
     category: 'Volkswagen',
     subcategory: 'Encendido',
     subSubcategory: 'Faros Delanteros',
+    price: "235.000"
   },
   {
     id: 20,

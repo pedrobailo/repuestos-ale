@@ -11,6 +11,7 @@ import {
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
+
 const Sidebar = ({ onFilterChange }) => {
   const categories = [
     {
@@ -44,9 +45,7 @@ const Sidebar = ({ onFilterChange }) => {
 
   return (
     <div style={{ width: '250px', padding: '10px' }}>
-      <Typography variant="h6" gutterBottom>
-        Categorías
-      </Typography>
+      <h2 className="product-title">Categorias</h2>
       {categories.map((category, index) => (
         <Accordion key={index}>
           <AccordionSummary
@@ -74,6 +73,7 @@ const Sidebar = ({ onFilterChange }) => {
                           key={subSubIndex}
                           button
                           onClick={() => handleFilterClick(category.name, subcat.name, subSubcat)}
+                          style={{ cursor: 'pointer'}}  
                         >
                           <ListItemText primary={subSubcat} />
                         </ListItem>
