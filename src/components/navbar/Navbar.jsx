@@ -8,6 +8,7 @@ import LoginIcon from '@mui/icons-material/Login';
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import { Link } from 'react-router-dom';
+import CartDrawer from '../cart/CartDrawer/CartDrawer';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -99,7 +100,7 @@ const Navbar = () => {
               <HomeIcon sx={{ marginRight: 1 }} />
               Inicio
             </MenuItem>
-            <MenuItem component={Link} to="/products" onClick={handleMenuClose}>
+            <MenuItem component={Link} to="/sidebar" onClick={handleMenuClose}>
               <InventoryIcon sx={{ marginRight: 1 }} />
               Productos
             </MenuItem>
@@ -115,6 +116,7 @@ const Navbar = () => {
               <ShoppingCart sx={{ marginRight: 1 }} />
               Carrito
             </MenuItem>
+            <CartDrawer /> 
           </Menu>
 
 
@@ -132,7 +134,7 @@ const Navbar = () => {
             <Button component={Link} to="/home" color="inherit" startIcon={<HomeIcon />}>
               Inicio
             </Button>
-            <Button color="inherit" onClick={handleProductMenuOpen} startIcon={<InventoryIcon />}>
+            <Button component={Link} to="/sidebar" color="inherit" startIcon={<InventoryIcon />}>
               Productos
             </Button>
             <Button component={Link} to="/contact" color="inherit" startIcon={<ContactMailIcon />}>
@@ -141,35 +143,9 @@ const Navbar = () => {
             <Button component={Link} to="/login" color="inherit" startIcon={<LoginIcon />}>
               Iniciar Sesión
             </Button>
-            <Button component={Link} to="/carrito" color="inherit" startIcon={<ShoppingCart />}>
-              Carrito
-            </Button>
-            <Button component={Link} to="/sidebar" color="inherit" >
-              Sidebar
-            </Button>
+            <CartDrawer /> 
           </Box>
 
-          {/* Menú desplegable de "Productos" */}
-          <Menu
-            anchorEl={productMenuAnchorEl}
-            open={productMenuOpen}
-            onClose={handleProductMenuClose}
-          >
-            <MenuItem component={Link} to="/fiat" onClick={handleProductMenuClose}>
-              <img src="/fiat.png" alt="Fiat Logo" style={{ width: '20px', marginRight: '8px' }} />
-              Fiat
-            </MenuItem>
-
-            <MenuItem component={Link} to="/volkswagen" onClick={handleProductMenuClose}>
-            <img src="/volkswagen.png" alt="volkswagen Logo" style={{ width: '20px', marginRight: '8px' }} />
-              Volkswagen
-            </MenuItem>
-            <MenuItem component={Link} to="/products" onClick={handleProductMenuClose}>
-              Ver todos
-            </MenuItem>
-          </Menu>
-
-          {/* Buscador */}
           <Search>
             <SearchIconWrapper>
               <SearchIcon />

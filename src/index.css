@@ -24,29 +24,6 @@ body {
     flex: 1; /* Hace que el contenido principal ocupe el espacio restante entre el header y el footer */
   }
 
-  .SectionCategorias {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3vh;
-    margin: 5vh;
-    flex-wrap: wrap;
-    padding: 0 10px;
-  }
-  .SectionCategoriasProductos {
-    display: flex;
-    gap: 3vh;
-    margin: 5vh;
-    flex-direction: column;
-}
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
-  }
 
   .carousel img {
     width: 100%;
@@ -63,10 +40,9 @@ body {
     background-color: #201b21;;
 }
 
+/* Estilos Pag Carrito */
 .cart-page{
-  background-color:rgb(119, 128, 136);
-  margin: 0 15%;
-  
-
+  background-color:rgb(15, 16, 17);
+  margin: 0 15% 3%;
 }
 

@@ -44,7 +44,7 @@ const Sidebar = ({ onFilterChange }) => {
   };
 
   return (
-    <div style={{ width: '250px', padding: '10px' }}>
+    <div>
       <h2 className="product-title">Categorias</h2>
       {categories.map((category, index) => (
         <Accordion key={index}>
