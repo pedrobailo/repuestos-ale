@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Products2.css'; // Importa el CSS
+import '../components/layouts/Estilos/Products2.css'; // Importa el CSS
 import Sidebar from '../components/layouts/sidebar/Sidebar';
 import Header from '../components/layouts/header/Header';
 import Footer from '../components/layouts/footer/Footer';
@@ -7,7 +7,7 @@ import Navbar from '../components/navbar/Navbar';
 import productsData from '../data/products';
 import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
 
-const Products2 = () => {
+const Products2 = ({ addToCart }) => { // Recibir addToCart como prop
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [filters, setFilters] = useState({
     category: '',
@@ -15,6 +15,7 @@ const Products2 = () => {
     subSubcategory: '',
   });
 
+  // Filtrar productos según los filtros seleccionados
   useEffect(() => {
     const { category, subcategory, subSubcategory } = filters;
     const filtered = productsData.filter((product) => {
@@ -31,20 +32,10 @@ const Products2 = () => {
     setFilters((prevFilters) => ({ ...prevFilters, ...newFilters }));
   };
 
-  const handleAddToCart = (product) => {
-    // Lógica para agregar al carrito
-    console.log(`Producto añadido al carrito: ${product.name}`);
-  };
-
-  const handleViewProduct = (product) => {
-    // Lógica para ver el producto
-    console.log(`Ver detalles del producto: ${product.name}`);
-  };
-
   return (
     <>
       <Header />
-      <Navbar />
+      <Navbar /> {/* No necesitas pasar cart aquí, ya que el carrito está en App.jsx */}
       <div className="container">
         <Sidebar onFilterChange={handleFilterChange} />
         <div className="product-list">
@@ -69,14 +60,14 @@ const Products2 = () => {
                       <Button 
                         variant="contained" 
                         color="primary" 
-                        onClick={() => handleAddToCart(product)}
+                        onClick={() => addToCart(product)} // Usar addToCart desde las props
                       >
                         Agregar al carrito
                       </Button>
                       <Button 
                         variant="outlined" 
                         color="primary" 
-                        onClick={() => handleViewProduct(product)}
+                        onClick={() => console.log(`Ver detalles del producto: ${product.name}`)}
                       >
                         Ver producto
                       </Button>

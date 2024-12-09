@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  padding: 10px;
+  gap: 20px; /* Añade un espacio entre la sidebar y los productos */
+}
+
+.sidebar {
+  width: auto; /* Ajusta el ancho de la sidebar */
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.product-list {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: rgb(90, 89, 87);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-grid2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Añade espacio entre las tarjetas */
+}
+
+.product-card {
+  background-color: #ac9494; /* Color de fondo de las tarjetas */
+  width: calc(33% - 20px); /* Calcula un ancho flexible que permite tres tarjetas por fila */
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza el hover */
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-title {
+  color: aliceblue;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Pantallas medianas */
+@media (max-width: 1200px) {
+  .product-card {
+    width: calc(50% - 20px); /* Dos tarjetas por fila */
+  }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100% !important;
+    margin: 0 auto 20px; /* Centra la sidebar y añade margen debajo */
+    text-align: center; /* Centra el contenido dentro de la sidebar si es necesario */
+  }
+
+  .product-list {
+    padding: 10px;
+  }
+
+  .product-grid2 {
+    justify-content: center;
+  }
+
+  .product-card {
+    width: 100%; /* Una tarjeta por fila */
+    margin: 10px 0;
+  }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .product-title {
+    font-size: 18px; /* Ajuste de fuente para pantallas pequeñas */
+  }
+
+  .product-card {
+    padding: 10px;
+    font-size: 14px; /* Ajuste general de fuente y espaciado */
+  }
+  .sidebar {
+    width: 100% !important;
+    margin: 0 auto; /* Asegura que esté centrada */
+    text-align: center;
+  }
+}
